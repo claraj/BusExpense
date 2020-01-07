@@ -1,6 +1,6 @@
 ﻿namespace BusExpense
 {
-    partial class Form1
+    partial class FormBus
     {
         /// <summary>
         /// Required designer variable.
@@ -39,16 +39,17 @@
             // 
             // txtTrips
             // 
-            this.txtTrips.Location = new System.Drawing.Point(179, 29);
+            this.txtTrips.Location = new System.Drawing.Point(205, 29);
             this.txtTrips.Name = "txtTrips";
-            this.txtTrips.Size = new System.Drawing.Size(100, 22);
+            this.txtTrips.Size = new System.Drawing.Size(100, 23);
             this.txtTrips.TabIndex = 0;
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(179, 113);
+            this.btnCalculate.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnCalculate.Location = new System.Drawing.Point(205, 112);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(100, 23);
+            this.btnCalculate.Size = new System.Drawing.Size(101, 23);
             this.btnCalculate.TabIndex = 1;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -56,10 +57,10 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(179, 68);
+            this.txtTotal.Location = new System.Drawing.Point(205, 68);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(100, 22);
+            this.txtTotal.Size = new System.Drawing.Size(100, 23);
             this.txtTotal.TabIndex = 2;
             // 
             // label1
@@ -67,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(32, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 17);
+            this.label1.Size = new System.Drawing.Size(150, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Number of bus trips";
             // 
@@ -82,15 +83,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Info;
             this.label3.Location = new System.Drawing.Point(32, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
+            this.label3.Size = new System.Drawing.Size(86, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Total spent";
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(179, 162);
+            this.btnExit.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnExit.Location = new System.Drawing.Point(230, 164);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 6;
@@ -98,11 +101,12 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // Form1
+            // FormBus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 197);
+            this.BackColor = System.Drawing.Color.DarkMagenta;
+            this.ClientSize = new System.Drawing.Size(331, 215);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -110,7 +114,9 @@
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtTrips);
-            this.Name = "Form1";
+            this.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Name = "FormBus";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
